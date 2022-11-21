@@ -4,47 +4,40 @@ xkb_symbols "swolemak" {
 
     include "se(basic)"
 
-    name[Group1]="Swedish (Colemak)";
+    name[Group1]="Swedish (Colemak DH)";
 
 // 1 2 3 4 5 6 7 8 9 0 + '
-//  q w f p g j l u y ö å "
-//   a r s t d h j n e i o ä '
-//  < z x c v b k m , . - 
+//  q w f p b j l u y ö å ~
+//   a r s t g m n e i o ä '
+//  z x c d v < k h , . - 
 
-    key <AD01> { [            q,            Q,      adiaeresis,       Adiaeresis ] };
-    key <AD02> { [            w,            W,           aring,            Aring ] };
-    key <AD03> { [            f,            F,          atilde,           Atilde ] };
-    key <AD04> { [            p,            P,          oslash,         Ooblique ] };
-    key <AD05> { [            b,            B,     dead_ogonek,       asciitilde ] };
-    key <AD06> { [            j,            J,         dstroke,          Dstroke ] };
-    key <AD07> { [            l,            L,         lstroke,          Lstroke ] };
-    key <AD08> { [            u,            U,          uacute,           Uacute ] };
-    key <AD09> { [            y,            Y,      udiaeresis,       Udiaeresis ] };
-    key <AD10> { [   odiaeresis,   Odiaeresis,              oe,               OE ] };
-    key <AD11> { [        aring,        Aring,           aring,            Aring ] };
-
-    key <AC01> { [            a,            A,          aacute,           Aacute ] };
-    key <AC02> { [            r,            R,      dead_grave,       asciitilde ] };
-    key <AC03> { [            s,            S,          ssharp,        0x1001e9e ] };
-    key <AC04> { [            t,            T,      dead_acute, dead_doubleacute ] };
-    key <AC05> { [            g,            G,  dead_diaeresis,       asciitilde ] };
-    key <AC06> { [            m,            M,      dead_caron,       asciitilde ] };
-    key <AC07> { [            n,            N,          ntilde,           Ntilde ] };
-    key <AC08> { [            e,            E,          eacute,           Eacute ] };
-    key <AC09> { [            i,            I,          iacute,           Iacute ] };
-    key <AC10> { [            o,            O,          oacute,           Oacute ] };
-    key <AC11> { [   adiaeresis,   Adiaeresis,              ae,               AE ] };
-
-    key <AB01> { [            z,            Z,              ae,               AE ] };
-    key <AB02> { [            x,            X, dead_circumflex,       asciitilde ] };
-    key <AB03> { [            c,            C,        ccedilla,         Ccedilla ] };
-    key <AB04> { [            d,            D,              oe,               OE ] };
-    key <AB05> { [            v,            V,      dead_breve,       asciitilde ] };
-    key <AB06> { [            k,            K,  dead_abovering,       asciitilde ] };
-    key <AB07> { [            h,            H,     dead_macron,       asciitilde ] };
+    key <AD03>	{ [         f,          F,      dstroke,  ordfeminine ]	};
+    key <AD04>	{ [         p,          P,        thorn,        THORN ]	};
+    key <AD05>	{ [         b,          B,  leftdoublequotemark, leftsinglequotemark ] };
+    key <AD06>	{ [         j,          J,    dead_hook,    dead_horn ] };
+    key <AD07>	{ [         l,          L,      lstroke,      Lstroke ]	};
+    key <AD08>	{ [         u,          U,    downarrow,      uparrow ]	};
+    key <AD09>	{ [         y,          Y,    leftarrow,          yen ]	};
+    key <AD10>	{ [odiaeresis, Odiaeresis,       oslash,       Oslash ]	};
+    
+    key <AC02>	{ [         r,          R,   registered,   registered ]	};
+    key <AC03>	{ [         s,          S,       ssharp,        U1E9E ]	};
+    key <AC04>	{ [         t,          T,        thorn,        THORN ]	};
+    key <AC06>	{ [         m,          M,           mu,    masculine ]	};
+    key <AC07>	{ [         n,          N, rightdoublequotemark, rightsinglequotemark ]	};
+    key <AC08>	{ [         e,          E,     EuroSign,         cent ]	};
+    key <AC09>	{ [         i,          I,   rightarrow,     idotless ]	};
+    key <AC10>	{ [         o,          O,           oe,           OE ]	};
+    
+    key <LSGT>	{ [         z,          Z, guillemotleft,        less ]	};
+    key <AB01>	{ [         x,          X, guillemotright,    greater ]	};
+    key <AB02>	{ [         c,          C,    copyright,    copyright ]	};
+    key <AB03>	{ [         d,          D,          eth,          ETH ]	};
+    key <AB05>  { [      less,     greater,         bar,    brokenbar ] };
+    key <AB06>	{ [         k,          K,          kra,    ampersand ]	};
+    key <AB07>	{ [         h,          H,      hstroke,      Hstroke ]	};
 
     key <CAPS> { [    BackSpace,    BackSpace,       BackSpace,        BackSpace ] };
 
     include "level3(ralt_switch)"
-
 };
