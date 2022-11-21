@@ -1,4 +1,4 @@
-// Swedish Colemak
+// Swedish Colemak-DH
 partial alphanumeric_keys
 xkb_symbols "swolemak" {
 
