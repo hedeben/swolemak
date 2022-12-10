@@ -2,9 +2,10 @@
 
 echo "This script adds Swedish Colemak-DH to your installation."
 
-echo "Editing /usr/share/X11/xkb/symbols/se"
+echo "Editing /usr/share/X11/xkb/symbols/se..."
 
 cat << EOF >> /usr/share/X11/xkb/symbols/se
+
 // Swedish Colemak-DH
 partial alphanumeric_keys
 xkb_symbols "swolemak" {
@@ -53,7 +54,7 @@ EOF
 
 echo "Done."
 
-echo "Editing /usr/share/X11/xkb/rules/evdev.xml"
+echo "Editing /usr/share/X11/xkb/rules/evdev.xml..."
 
 sed -i '/Swedish (no dead keys)/a \
           </configItem>\
