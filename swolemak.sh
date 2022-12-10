@@ -52,8 +52,6 @@ xkb_symbols "swolemak" {
 
 EOF
 
-echo "Done."
-
 echo "Editing /usr/share/X11/xkb/rules/evdev.xml..."
 
 sed -i '/Swedish (no dead keys)/a \
@@ -65,12 +63,10 @@ sed -i '/Swedish (no dead keys)/a \
             <description>Swedish (Colemak-DH)</description>
 ' /usr/share/X11/xkb/rules/evdev.xml
 
-echo "Done."
-
 read -p "Do you want to reboot for the changes to take effect? [y/n]" confirm
 
 if [[ ${confirm} == "y" ]]; then
-    echo "Rebooting..."
+    echo "Rebooting..." && sleep 5
     shutdown -r now
 else
     echo "Alright."
