@@ -8,7 +8,7 @@ A Swedish Colemak DH layout for the /usr/share/X11/xkb/symbols/se file.
  z x c d v < k h , . -
  ```
 
-If installed manually, the layout variant needs to be added to the /usr/share/X11/xkb/rules/evdev.xml file.
+If installed manually, the layout variant needs to be added to /usr/share/X11/xkb/rules/evdev.xml.
 
 To install using the script: 
 
