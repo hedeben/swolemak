@@ -5,4 +5,4 @@ To install using the script:
 
 `wget https://raw.githubusercontent.com/hedeben/swolemak/main/swolemak.sh`
 
-`sh ./swolemak.sh`
+`sudo sh ./swolemak.sh`
