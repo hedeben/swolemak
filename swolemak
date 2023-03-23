@@ -1,6 +1,6 @@
 // Swedish Colemak-DH
 partial alphanumeric_keys
-xkb_symbols "swolemak" {
+xkb_symbols "swolemakdh" {
 
     include "se(basic)"
 
