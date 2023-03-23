@@ -12,7 +12,7 @@ If installed manually, the layout variant needs to be added to /usr/share/X11/xk
 
 To install using the script: 
 
-    WARNING: Running this multiple times will probably cause problems. And please backup your files before you do.
+*WARNING: Running this multiple times will probably cause problems. And please backup your files before you do.*
 
 ```
 wget https://raw.githubusercontent.com/hedeben/swolemak/main/swolemak.sh
