@@ -9,12 +9,3 @@ A Swedish Colemak DH layout for the /usr/share/X11/xkb/symbols/se file.
  ```
 
 If installed manually, the layout variant needs to be added to /usr/share/X11/xkb/rules/evdev.xml.
-
-To install using the script: 
-
-*WARNING: Running this multiple times will probably cause problems. And please backup your files before you do.*
-
-```
-wget https://raw.githubusercontent.com/hedeben/swolemak/main/swolemak.sh
-sudo sh ./swolemak.sh
-```
